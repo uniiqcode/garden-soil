@@ -1,0 +1,39 @@
+{
+  "_note": "植えたいもの。plant は地域区分ごとの植え付け(種まき)に適した月。plan は下の plans のどれで段取りを組むか。noLime は石灰を入れない作物。steps の from/to は植え付け日からの日数(負 = 前)、gap は前の手順から最低あける日数(省略時1)、task は tasks.json の id(参考リンクをそこから引く)。",
+  "plans": {
+    "veg": [
+      { "task": "ph", "name": "土の酸度(pH)を測る", "from": -28, "to": -15, "skipIf": "noLime" },
+      { "task": "lime", "name": "苦土石灰をまく", "from": -21, "to": -10, "gap": 0, "skipIf": "noLime" },
+      { "task": "compost", "name": "堆肥と元肥を入れる", "from": -10, "to": -5, "gap": 7 },
+      { "task": "bed", "name": "畝立てとマルチ張り", "from": -6, "to": -1 },
+      { "task": null, "name": "植え付け・種まき", "from": 0, "to": 0, "noWeather": true }
+    ],
+    "fruit": [
+      { "task": "fruit-hole", "name": "植え穴を掘り、堆肥を混ぜた土を戻す", "from": -21, "to": -7 },
+      { "task": null, "name": "苗木の植え付け", "from": 0, "to": 0, "noWeather": true }
+    ]
+  },
+  "crops": [
+    { "id": "tomato", "name": "トマト", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 6], "mid": [4, 5], "warm": [4] } },
+    { "id": "eggplant", "name": "ナス", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 6], "mid": [5], "warm": [4, 5] } },
+    { "id": "cucumber", "name": "キュウリ", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 6], "mid": [4, 5], "warm": [4, 5] } },
+    { "id": "pepper", "name": "ピーマン", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 6], "mid": [5], "warm": [4, 5] } },
+    { "id": "edamame", "name": "エダマメ", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 6], "mid": [4, 5, 6], "warm": [4, 5] }, "note": "肥料(特に窒素)は控えめにします。" },
+    { "id": "sweetpotato", "name": "サツマイモ", "kind": "野菜", "plan": "veg", "noLime": true, "plant": { "cold": [5, 6], "mid": [5, 6], "warm": [4, 5, 6] }, "note": "やせた土でも育ちます。石灰はまかず、肥料も控えめにします。" },
+    { "id": "potato", "name": "ジャガイモ", "kind": "野菜", "plan": "veg", "noLime": true, "plant": { "cold": [4, 5], "mid": [3, 9], "warm": [2, 3, 9] }, "note": "石灰を入れると、そうか病が出やすくなります。" },
+    { "id": "spinach", "name": "ホウレンソウ", "kind": "野菜", "plan": "veg", "plant": { "cold": [4, 5, 8, 9], "mid": [3, 4, 9, 10], "warm": [3, 10, 11] }, "note": "酸性の土に特に弱い野菜です。pHを測って石灰で調整します。" },
+    { "id": "daikon", "name": "ダイコン", "kind": "野菜", "plan": "veg", "plant": { "cold": [7, 8], "mid": [8, 9], "warm": [9] }, "note": "根が割れないよう、深く耕して石や土の塊を取り除きます。" },
+    { "id": "carrot", "name": "ニンジン", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 6, 7], "mid": [3, 4, 7, 8], "warm": [3, 8, 9] }, "note": "未熟な堆肥は根が分かれる原因になります。早めに入れます。" },
+    { "id": "chinesecabbage", "name": "ハクサイ", "kind": "野菜", "plan": "veg", "plant": { "cold": [8], "mid": [9], "warm": [9] } },
+    { "id": "cabbage", "name": "キャベツ", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 8], "mid": [3, 4, 9], "warm": [3, 9, 10] } },
+    { "id": "broccoli", "name": "ブロッコリー", "kind": "野菜", "plan": "veg", "plant": { "cold": [7, 8], "mid": [8, 9], "warm": [9] } },
+    { "id": "lettuce", "name": "レタス", "kind": "野菜", "plan": "veg", "plant": { "cold": [5, 8], "mid": [3, 4, 9], "warm": [3, 9, 10] } },
+    { "id": "onion", "name": "タマネギ", "kind": "野菜", "plan": "veg", "plant": { "cold": [4], "mid": [11], "warm": [11, 12] } },
+    { "id": "garlic", "name": "ニンニク", "kind": "野菜", "plan": "veg", "plant": { "cold": [9], "mid": [10], "warm": [10] } },
+    { "id": "blueberry", "name": "ブルーベリー", "kind": "果樹", "plan": "fruit", "noLime": true, "plant": { "cold": [11, 3, 4], "mid": [11, 12, 2, 3], "warm": [11, 12, 2, 3] }, "note": "酸性の土を好みます。石灰は入れず、無調整のピートモスを混ぜます。" },
+    { "id": "persimmon", "name": "カキ", "kind": "果樹", "plan": "fruit", "plant": { "cold": [11, 3, 4], "mid": [11, 12, 2, 3], "warm": [11, 12, 1, 2, 3] } },
+    { "id": "fig", "name": "イチジク", "kind": "果樹", "plan": "fruit", "plant": { "cold": [4], "mid": [2, 3], "warm": [2, 3] }, "note": "寒さに弱いので、春に植えるのが安心です。" },
+    { "id": "kiwi", "name": "キウイフルーツ", "kind": "果樹", "plan": "fruit", "plant": { "cold": [4], "mid": [11, 12, 2, 3], "warm": [11, 12, 2, 3] }, "note": "雄木と雌木を一緒に植えます。" },
+    { "id": "citrus", "name": "温州ミカン", "kind": "果樹", "plan": "fruit", "plant": { "cold": [], "mid": [3, 4], "warm": [3, 4] }, "note": "寒さに弱いので、寒冷地では鉢植えにします。" }
+  ]
+}

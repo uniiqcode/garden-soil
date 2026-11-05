@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>土日和(つちびより)</title>
+<meta name="description" content="住んでいる場所の気候と天気予報から、次に土づくりができる晴れの日と、その日にやることを教える家庭菜園のアプリ。">
+<meta name="theme-color" content="#8CCBF0">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/style.css?v=1">
+<script type="module" src="js/app.js?v=1"></script>
+</head>
+<body>
+<header class="hero">
+  <h1 class="title"><ruby>土日和<rt><span>つちびより</span></rt></ruby></h1>
+  <p class="tagline">次の晴れの日に、畑の土にすること</p>
+  <p class="place" id="placeLine" hidden></p>
+</header>
+
+<main>
+  <section id="setup" class="card setup" hidden>
+    <h2>はじめに、畑の場所を教えてください</h2>
+    <p class="muted">場所から気候(寒冷地・中間地・暖地)と天気予報を調べます。場所の情報はこの端末の中だけに保存します。</p>
+  </section>
+
+  <section id="next" class="card next" hidden aria-live="polite"></section>
+
+  <section id="days" class="card" hidden>
+    <h2>この先2週間の空と土</h2>
+    <p class="legend"><span class="mark best">◎</span>晴れで作業日和 <span class="mark ok">○</span>曇りだが作業できる <span class="mark no">—</span>作業に向かない</p>
+    <ol class="strip" id="strip"></ol>
+    <p class="day-detail" id="dayDetail"></p>
+  </section>
+
+  <section id="plans" class="card" hidden></section>
+
+  <section id="season" class="card" hidden></section>
+
+  <section class="card settings" id="settingsCard">
+    <details id="settings">
+      <summary><h2>設定</h2><span class="muted" id="settingsSummary"></span></summary>
+
+      <div class="field">
+        <h3>畑の場所</h3>
+        <form id="placeForm" class="row">
+          <input id="placeInput" type="search" placeholder="市区町村や住所(例: 松山市)" autocomplete="address-level2" required>
+          <button type="submit">探す</button>
+        </form>
+        <button type="button" id="geoBtn" class="link-btn">今いる場所を使う</button>
+        <ul id="placeResults" class="results"></ul>
+        <p id="placeMsg" class="muted" role="status"></p>
+      </div>
+
+      <div class="field">
+        <h3>地域区分</h3>
+        <select id="zoneSelect" aria-label="地域区分">
+          <option value="auto">自動で決める</option>
+          <option value="cold">寒冷地</option>
+          <option value="mid">中間地</option>
+          <option value="warm">暖地</option>
+        </select>
+        <p id="zoneMsg" class="muted"></p>
+      </div>
+
+      <div class="field">
+        <h3>畑の土</h3>
+        <div id="soilRadios" class="radios" role="radiogroup" aria-label="畑の土"></div>
+        <p class="muted">水はけが悪い土ほど、雨がやんでから作業できるまでに日数がかかります。</p>
+      </div>
+
+      <div class="field">
+        <h3>植えたいもの</h3>
+        <form id="planForm" class="plan-form">
+          <select id="cropSelect" aria-label="作物" required></select>
+          <input id="plantDate" type="date" aria-label="植え付け予定日" required>
+          <button type="submit">加える</button>
+        </form>
+        <p id="cropHint" class="muted"></p>
+        <ul id="planList" class="plan-list"></ul>
+      </div>
+    </details>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>天気: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a>(CC BY 4.0)/ 住所検索: <a href="https://msearch.gsi.go.jp/" target="_blank" rel="noopener">国土地理院</a></p>
+  <p>作業の目安は一般的なものです。くわしいやり方はリンク先や資材の説明書で確かめてください。</p>
+</footer>
+</body>
+</html>

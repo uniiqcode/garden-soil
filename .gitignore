@@ -1,0 +1,6 @@
+node_modules/
+tests/out/
+tools/icon/out/
+tools/icon/*.ttf
+.env
+.DS_Store
