@@ -1,0 +1,132 @@
+{
+  "_note": "季節の土づくり作業。months は地域区分ごとの適した月。links は企業サイト・ブログ・YouTube へのリンク(ノウハウはリンク先に任せ、ここには要点だけ書く)。checked は最後にリンクを確認した日。",
+  "tasks": [
+    {
+      "id": "kan-okoshi",
+      "name": "寒起こし(天地返し)",
+      "summary": "空いた畑を30cmほど深く掘り返し、土の塊は砕かずに寒さにさらします。凍ったりとけたりをくり返して土がほぐれ、土の中の害虫や病原菌も減ります。",
+      "weather": "dry",
+      "months": { "cold": [11, 4], "mid": [12, 1, 2], "warm": [12, 1, 2] },
+      "links": [
+        { "title": "野菜づくりに適した土づくり", "site": "ヤンマー", "kind": "web", "url": "https://www.yanmar.com/jp/agri/agrilife/kitchen_garden/field/soil/" },
+        { "title": "冬しかできない土作り「寒起こし」のやり方", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=Z1eoR_dtoVI" },
+        { "title": "寒い時期に土を起こすだけで3つの効果(団粒化・殺菌・除草)", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=BnTZKWgf66U" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "cleanup",
+      "name": "収穫後の片付け",
+      "summary": "終わった作物の根や茎葉、マルチを片付けます。病気の出た株は畑に残さず処分し、元気な残りは刻んで堆肥にします。",
+      "weather": "dry",
+      "months": { "cold": [9, 10], "mid": [10, 11], "warm": [11, 12] },
+      "links": [
+        { "title": "【畑の作り方】家庭菜園のための「土」と「畝」づくり", "site": "カインズ", "kind": "web", "url": "https://magazine.cainz.com/article/3497" },
+        { "title": "野菜くずを堆肥にする残渣処理のやり方", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=0NXWhwavrH0" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "leaf-mold",
+      "name": "落ち葉で腐葉土づくり",
+      "summary": "広葉樹の落ち葉を集め、米ぬかと水を加えて積んでおきます。時々切り返すと、春から夏には土に混ぜられる腐葉土になります。",
+      "weather": "dry",
+      "months": { "cold": [10, 11], "mid": [11, 12, 1], "warm": [12, 1] },
+      "links": [
+        { "title": "落ち葉で簡単土作り|堆肥(腐葉土)の作り方|温床", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=9Zb0bPamOKg" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "ph",
+      "name": "土の酸度(pH)を測る",
+      "summary": "石灰をまく前に、酸度計や測定液で土のpHを測ります。多くの野菜は pH 6.0〜6.5 が適し、もう十分なら石灰は要りません。",
+      "weather": "any",
+      "months": { "cold": [3, 4, 7, 8], "mid": [2, 3, 8, 9], "warm": [2, 3, 8, 9] },
+      "links": [
+        { "title": "土の基礎知識", "site": "コメリ", "kind": "web", "url": "https://www.komeri.com/contents/howto/html/03080.html" },
+        { "title": "土の酸性度(pH)の測り方", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=dGTb0Pg7PSo" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "lime",
+      "name": "苦土石灰をまく",
+      "summary": "植え付けの2週間ほど前に、苦土石灰をまいて土とよく混ぜます。堆肥と同時に入れると根を傷めるガスが出ることがあるので、日をずらします。",
+      "weather": "dry",
+      "months": { "cold": [4, 5, 8], "mid": [3, 4, 8, 9], "warm": [2, 3, 8, 9, 10] },
+      "links": [
+        { "title": "土を作る", "site": "コメリ", "kind": "web", "url": "https://www.komeri.com/contents/howto/html/03070.html" },
+        { "title": "園芸用語辞典(か行)「苦土石灰」", "site": "サントリーフラワーズ", "kind": "web", "url": "https://www.suntory.co.jp/flower/homegardens/howto/dictionary/ka.html" },
+        { "title": "【5分でわかる】苦土石灰のまき方 ～狭い庭で家庭菜園～", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=-BuRHfa-z68" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "compost",
+      "name": "堆肥と元肥を入れる",
+      "summary": "植え付けの1週間ほど前に、完熟堆肥と元肥をまいて深めに耕します。未熟な堆肥は根を傷めるので、早めに入れるか完熟のものを使います。",
+      "weather": "dry",
+      "months": { "cold": [4, 5, 8], "mid": [3, 4, 9, 10], "warm": [2, 3, 9, 10] },
+      "links": [
+        { "title": "3-6. 野菜が育つ土づくり", "site": "住友化学園芸", "kind": "web", "url": "https://www.sc-engei.co.jp/gardeningbeginner/basics/003-006/" },
+        { "title": "はじめての野菜作り(畑の作り方・土の作り方)", "site": "タキイ種苗", "kind": "web", "url": "https://shop.takii.co.jp/selection/saien_start2105.html" },
+        { "title": "野菜が育つ土作りをご紹介", "site": "ハイポネックス", "kind": "web", "url": "https://www.hyponex.co.jp/plantia/plantia-12441/" },
+        { "title": "はじめての家庭菜園① 草刈りから堆肥・石灰投入までの手順", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=HIKgE2Q7vRY" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "bed",
+      "name": "畝立てとマルチ張り",
+      "summary": "植え付けの数日前に畝を立て、表面を平らにならします。マルチは土に湿り気があるときに張るのが基本で、雨がやんで1〜2日後の晴れの日が向いています。",
+      "weather": "moist",
+      "months": { "cold": [5, 6, 8], "mid": [4, 5, 9, 10], "warm": [3, 4, 9, 10] },
+      "links": [
+        { "title": "畝の作り方バリエーション", "site": "タキイ種苗", "kind": "web", "url": "https://www.takii.co.jp/tsk/saien_movie/explanation/001.html" },
+        { "title": "ポリマルチの張り方", "site": "タキイ種苗", "kind": "web", "url": "https://www.takii.co.jp/tsk/saien_movie/explanation/007.html" },
+        { "title": "マルチの張り方", "site": "コメリ", "kind": "web", "url": "https://www.komeri.com/contents/howto/html/03810.html" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "green-manure",
+      "name": "緑肥の種まき・すき込み",
+      "summary": "空いた畝に緑肥(エン麦・ヘアリーベッチ・ライ麦など)をまき、花が咲く前に刻んですき込みます。すき込んでから次の植え付けまでは3〜4週間あけます。",
+      "weather": "dry",
+      "months": { "cold": [5, 6, 7, 8], "mid": [4, 5, 6, 9, 10], "warm": [4, 5, 6, 10, 11] },
+      "links": [
+        { "title": "緑肥作物の栽培方法と留意点", "site": "雪印種苗", "kind": "web", "url": "https://www.snowseed.co.jp/use/use-10000157/" },
+        { "title": "夏の果菜が終わったら畝ごとに緑肥でリフレッシュ!", "site": "タキイ種苗", "kind": "web", "url": "https://shop.takii.co.jp/simages/shop/selection/greenmanure_1808.html" },
+        { "title": "【緑肥】ヘアリーベッチの使い方", "site": "カインズ", "kind": "web", "url": "https://magazine.cainz.com/article/106915" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "solar",
+      "name": "太陽熱消毒",
+      "summary": "梅雨明けの暑い時期に、土を湿らせてから透明マルチで覆い、3〜4週間置きます。晴れが続く日に始めるほど効果が上がります。",
+      "weather": "streak",
+      "months": { "cold": [7, 8], "mid": [7, 8], "warm": [7, 8, 9] },
+      "links": [
+        { "title": "農研機構に聞く「太陽熱土壌消毒」の効果的な利用方法", "site": "マイナビ農業", "kind": "web", "url": "https://agri.mynavi.jp/2019_08_01_80742/" },
+        { "title": "効果的な土壌消毒の方法とは? 季節別のやり方", "site": "マイナビ農業", "kind": "web", "url": "https://agri.mynavi.jp/2023_06_03_227837/" },
+        { "title": "【太陽熱消毒完全ガイド】梅雨明け～9月上旬がチャンス!", "site": "YouTube", "kind": "video", "url": "https://www.youtube.com/watch?v=RM_ziFlGFzk" }
+      ],
+      "checked": "2026-11-05"
+    },
+    {
+      "id": "fruit-hole",
+      "name": "果樹の植え穴づくり",
+      "summary": "落葉果樹は葉が落ちた11〜3月が植え付けの時期です(真冬は避けます)。植える2週間ほど前に大きめの穴を掘り、堆肥や腐葉土を混ぜた土を戻しておきます。",
+      "weather": "dry",
+      "months": { "cold": [11, 3, 4], "mid": [11, 12, 2, 3], "warm": [11, 12, 1, 2, 3] },
+      "links": [
+        { "title": "ブルーベリーの植え付け方法と植え付け間隔", "site": "タキイ種苗", "kind": "web", "url": "https://shop.takii.co.jp/qa/detail/724" },
+        { "title": "ブルーベリーの育て方", "site": "ハイポネックス", "kind": "web", "url": "https://www.hyponex.co.jp/plantia/plantia-7289/" },
+        { "title": "ブルーベリーの育て方", "site": "コメリ", "kind": "web", "url": "https://www.komeri.com/contents/howto/html/00990.html" }
+      ],
+      "checked": "2026-11-05"
+    }
+  ]
+}
