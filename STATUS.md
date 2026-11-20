@@ -7,14 +7,15 @@
 
 ## 今の状況
 
+- 2026-11-20 **公開した。** にいさんが GitHub Pages を有効にした(`main`・`/ (root)`)。公開先は https://uniiqcode.com/garden-soil/
 - 2026-11-20 共通の仕組み(CLAUDE.md・STATUS.md)をそろえた
 - 2026-11-05 土日和(つちびより)の最小版を作り、`main` に入れた(PR #1)。次の作業日・2週間の空と土・植え付けまでの段取り・季節の土づくり
 
-## 次にやること(にいさんの操作待ち)
+## 次にやること
 
-- GitHub Pages を有効にする: GitHub の garden-soil の Settings → Pages → Source を「Deploy from a branch」、Branch を `main`・`/ (root)` にして Save。公開先は `https://uniiqcode.com/garden-soil/` になる
-- 公開できたら: uniiqcode.com のトップにアイコンを足すか、検索対策(スキル `seo-uniiqcode`)・ホーム画面に追加(スキル `homescreen-uniiqcode`)を入れるか決める
+- スマホで公開ページを開いて、表示と動きを確かめる
 
 ## 未決(にいさんの判断待ち)
 
-- 公開する時期(GitHub Pages の設定)
+- uniiqcode.com のトップにアイコンを足すか(`uniiqcode.github.io` の `index.html`)
+- 検索対策(スキル `seo-uniiqcode`)・ホーム画面に追加のボタン(スキル `homescreen-uniiqcode`)を入れるか
