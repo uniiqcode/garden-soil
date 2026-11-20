@@ -1,5 +1,6 @@
 # 土日和(garden-soil)で作業するときの決まり
 
+- **作業を始める前に `STATUS.md` を読む。** 状況が変わったら、終わる前に `STATUS.md` を更新する。
 - niisan とのやり取りは日本語で行う。
 - 公開アプリ(GitHub Pages)。アフィリエイトのリンクは入れない。
 - 仕様は `docs/spec.md`。判定ルールを変えたら同じ変更で spec とテスト(`tests/logic.test.mjs`)も直す。
